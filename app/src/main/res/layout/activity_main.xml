@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorGrey"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="phone"
+        android:textColorHint="#000000"
+        android:hint="Mobile Number*"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/FullName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name*"
+        android:layout_below = "@+id/phone"
+        android:layout_centerHorizontal = "true"
+        android:textAllCaps="true"
+        android:padding="2dp"
+        android:textColorHint="#000000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@color/colorWhite"/>
+
+
+    <EditText
+        android:id="@+id/Address_1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPostalAddress"
+        android:hint="Address Line 1*"
+        android:textAllCaps="true"
+        android:padding="2dp"
+        android:textColorHint="#000000"
+        android:textAlignment="center"
+        android:layout_below = "@+id/FullName"
+        android:layout_centerHorizontal = "true"
+        android:textSize="18sp"
+        android:background="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/Address_2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPostalAddress"
+        android:hint="Address Line 2*"
+        android:textAllCaps="true"
+        android:padding="2dp"
+        android:layout_below = "@+id/Address_1"
+        android:layout_centerHorizontal = "true"
+        android:textColorHint="#000000"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:background="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/Pincode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/Address_2"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorWhite"
+        android:hint="Pin Code*"
+        android:inputType="phone"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColorHint="#000000"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_below="@+id/Pincode"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:-"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="22sp"/>
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:text="Male"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="18dp"
+                android:text="Female"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Register"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:background="#333333"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
